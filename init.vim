@@ -16,3 +16,4 @@ set softtabstop=4
 set noswapfile
 set autoindent
 set number
+syntax on
