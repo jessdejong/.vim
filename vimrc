@@ -1,4 +1,5 @@
 set termguicolors
+" filetype plugin indent on
 
 " colorscheme
 colo gruvbox
@@ -15,20 +16,12 @@ set number
 set incsearch
 syntax on
 
-" Plugins
-" plug causes indentation to be messed up
-" call plug#begin('~/.vim/plugged')
-" Plug 'preservim/nerdtree'
-" Plug 'ctrlpvim/ctrlp.vim'
-" call plug#end()
+execute pathogen#infect()
 
-"let mapleader=" "
-"nnoremap <leader>n :NERDTree<CR>
+let mapleader=" "
+nnoremap <leader>n :NERDTree<CR>
 
-" Download plug
-"curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-" comment out "filetype plugin indent on" in vim-plug
-
-" set noexpandtab " Make sure that every file uses real tabs, not spaces
-" set shiftround  " Round indent to multiple of 'shiftwidth'
-" set autoindent  " Copy indent from current line, over to the new line
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
